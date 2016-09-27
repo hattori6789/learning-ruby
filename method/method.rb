@@ -7,11 +7,11 @@
 
 # 疑問
 # returnはcase式のあとに抜けてから書くべき？ => 重複しなくて読みやすい、手間が省ける
-# actionの初期化は必要？
-# case式のあとのreturn、記述するべき？
+# actionの初期化は必要？ => 必要とされていない様子
+# case式のあとのreturn、記述するべき？ => 省略してみた、Rubyはreturnの指定がなければbodyの最後の式の値を返す
+# https://docs.ruby-lang.org/ja/latest/doc/spec=2fdef.html#eval_method
 
 def judgeAction(signalColor)
-	action = ""
 
 	case signalColor
 	when "赤"
@@ -21,9 +21,8 @@ def judgeAction(signalColor)
 	when "緑", "青"
 		action = "前進"
 	else
-		action = "赤、黄、青、緑のいずれかを入力してください。"
+		action = "Unmatched color: 赤、黄、青、緑のいずれかの色を入力してください。"
 	end
-	return action
 
 end
 
