@@ -7,7 +7,7 @@
 
 # 疑問
 # returnはcase式のあとに抜けてから書くべき？ => 重複しなくて読みやすい、手間が省ける
-# actionの初期化は必要？ => 必要とされていない様子
+# actionの初期化は必要？ => 不要
 # case式のあとのreturn、記述するべき？ => 省略してみた、Rubyはreturnの指定がなければbodyの最後の式の値を返す
 # https://docs.ruby-lang.org/ja/latest/doc/spec=2fdef.html#eval_method
 
